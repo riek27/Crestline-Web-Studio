@@ -3,603 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products | Blue Star Engineering Co. Ltd.</title>
+    <title>Products | AFRI TECH - Quality Electronics in Juba</title>
+    <meta name="description" content="Browse AFRI TECH's collection of quality electronics including Nokia phones, Tecno devices, and more. All imported from Dubai.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 <body>
-    <!-- Header & Navigation -->
-    <header class="navbar">
+    <header>
         <div class="container">
-            <div class="logo">
-                <i class="fas fa-star"></i>
-                Blue<span>Star</span>
-            </div>
-            <div class="menu-toggle">☰</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html" class="active">Products</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <nav class="navbar">
+                <div class="logo-container">
+                    <img src="assets/afrilogo.jpg" alt="AFRI TECH Logo" class="logo">
+                    <a href="index.html" class="brand-text">AFRI <span>TECH</span></a>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
+    <!-- Page Hero -->
+    <section class="page-hero">
         <div class="container">
-            <h1>Premium Samsung Products</h1>
-            <p>Discover our complete range of high-quality Samsung appliances designed for South Sudanese homes and businesses</p>
+            <h1>Our Products</h1>
+            <p>Discover our collection of quality electronics, all imported directly from Dubai.</p>
         </div>
     </section>
 
-    <!-- Products Hero Section -->
-    <section class="products-hero">
+    <!-- Products Section -->
+    <section class="page-section">
         <div class="container">
-            <div class="hero-content">
-                <h2>Engineered for South Sudan's Climate</h2>
-                <p>All our Samsung appliances are specifically selected and tested to perform optimally in South Sudan's unique environmental conditions.</p>
-                <div class="hero-features">
-                    <div class="hero-feature">
-                        <i class="fas fa-temperature-high"></i>
-                        <span>Built for High Temperatures</span>
-                    </div>
-                    <div class="hero-feature">
-                        <i class="fas fa-bolt"></i>
-                        <span>Voltage Stabilization</span>
-                    </div>
-                    <div class="hero-feature">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>Dust & Debris Protection</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Featured Products -->
-    <section class="section featured-products">
-        <div class="container">
-            <h2 class="section-title">Featured Products</h2>
-            <p class="section-subtitle">Our most popular Samsung appliances in South Sudan</p>
-            
-            <div class="featured-grid">
-                <div class="featured-product">
-                    <div class="featured-badge">Bestseller</div>
-                    <img src="assets/samsu.jpg" alt="Samsung WindFree AC">
-                    <div class="featured-info">
-                        <h3>Samsung WindFree™ Air Conditioner</h3>
-                        <p class="featured-desc">Experience cool comfort without the direct wind chill. Perfect for South Sudan's hot climate.</p>
-                        <div class="featured-specs">
-                            <div class="spec">
-                                <i class="fas fa-bolt"></i>
-                                <span>Energy Efficient</span>
-                            </div>
-                            <div class="spec">
-                                <i class="fas fa-volume-mute"></i>
-                                <span>Quiet Operation</span>
-                            </div>
-                            <div class="spec">
-                                <i class="fas fa-wifi"></i>
-                                <span>Smart Control</span>
-                            </div>
-                        </div>
-                        <a href="#windfree-details" class="btn btn-primary">View Details</a>
+            <h2 class="section-title">Featured Electronics</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card loading">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1511707171639-5d8976ac18aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="product-info">
+                        <h3>Nokia 5710 XpressAudio</h3>
+                        <p>Classic design with built-in wireless earbuds and long-lasting battery life. Perfect for music lovers.</p>
+                        <span class="product-price">$85 / 100,000 SSP</span>
+                        <a href="tel:+211927930310" class="btn"><i class="fas fa-phone-alt"></i> Call to Order</a>
+                        <a href="https://wa.me/211927930310" class="btn btn-whatsapp" style="margin-top: 0.5rem;"><i class="fab fa-whatsapp"></i> WhatsApp Order</a>
                     </div>
                 </div>
                 
-                <div class="featured-product">
-                    <div class="featured-badge">Power Solution</div>
-                    <img src="assets/sams.png" alt="Samsung Generator">
-                    <div class="featured-info">
-                        <h3>Samsung Power Generator</h3>
-                        <p class="featured-desc">Reliable power backup solution designed for South Sudan's frequent power outages.</p>
-                        <div class="featured-specs">
-                            <div class="spec">
-                                <i class="fas fa-tachometer-alt"></i>
-                                <span>Automatic Start</span>
-                            </div>
-                            <div class="spec">
-                                <i class="fas fa-gas-pump"></i>
-                                <span>Fuel Efficient</span>
-                            </div>
-                            <div class="spec">
-                                <i class="fas fa-shield-alt"></i>
-                                <span>Safety Protected</span>
-                            </div>
-                        </div>
-                        <a href="#generator-details" class="btn btn-primary">View Details</a>
+                <!-- Product 2 -->
+                <div class="product-card loading">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1565849904467-52e3453d644f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="product-info">
+                        <h3>Nokia 6310 (2023 Edition)</h3>
+                        <p>Legendary durability with modern features. Extended battery life and classic design.</p>
+                        <span class="product-price">$65 / 80,000 SSP</span>
+                        <a href="tel:+211927930310" class="btn"><i class="fas fa-phone-alt"></i> Call to Order</a>
+                        <a href="https://wa.me/211927930310" class="btn btn-whatsapp" style="margin-top: 0.5rem;"><i class="fab fa-whatsapp"></i> WhatsApp Order</a>
                     </div>
                 </div>
                 
-                <div class="featured-product">
-                    <div class="featured-badge">New Arrival</div>
-                    <img src="assets/samm.jpg" alt="Samsung Water Heater">
-                    <div class="featured-info">
-                        <h3>Samsung Smart Water Heater</h3>
-                        <p class="featured-desc">Advanced water heating with smart temperature control and energy-saving features.</p>
-                        <div class="featured-specs">
-                            <div class="spec">
-                                <i class="fas fa-fire"></i>
-                                <span>Fast Heating</span>
-                            </div>
-                            <div class="spec">
-                                <i class="fas fa-leaf"></i>
-                                <span>Energy Saving</span>
-                            </div>
-                            <div class="spec">
-                                <i class="fas fa-mobile-alt"></i>
-                                <span>Smart Control</span>
-                            </div>
-                        </div>
-                        <a href="#heater-details" class="btn btn-primary">View Details</a>
+                <!-- Product 3 -->
+                <div class="product-card loading">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1598327105666-5b89351aff97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="product-info">
+                        <h3>Tecno Spark 10 Pro</h3>
+                        <p>Advanced smartphone with high-resolution camera, large display, and powerful performance.</p>
+                        <span class="product-price">$120 / 145,000 SSP</span>
+                        <a href="tel:+211927930310" class="btn"><i class="fas fa-phone-alt"></i> Call to Order</a>
+                        <a href="https://wa.me/211927930310" class="btn btn-whatsapp" style="margin-top: 0.5rem;"><i class="fab fa-whatsapp"></i> WhatsApp Order</a>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card loading">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="product-info">
+                        <h3>Samsung Galaxy A14</h3>
+                        <p>Feature-rich smartphone with excellent camera quality and long battery life.</p>
+                        <span class="product-price">$150 / 180,000 SSP</span>
+                        <a href="tel:+211927930310" class="btn"><i class="fas fa-phone-alt"></i> Call to Order</a>
+                        <a href="https://wa.me/211927930310" class="btn btn-whatsapp" style="margin-top: 0.5rem;"><i class="fab fa-whatsapp"></i> WhatsApp Order</a>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-card loading">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="product-info">
+                        <h3>Wireless Bluetooth Headphones</h3>
+                        <p>Premium sound quality with noise cancellation and comfortable over-ear design.</p>
+                        <span class="product-price">$35 / 42,000 SSP</span>
+                        <a href="tel:+211927930310" class="btn"><i class="fas fa-phone-alt"></i> Call to Order</a>
+                        <a href="https://wa.me/211927930310" class="btn btn-whatsapp" style="margin-top: 0.5rem;"><i class="fab fa-whatsapp"></i> WhatsApp Order</a>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-card loading">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1605236453806-6ff36851218e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="product-info">
+                        <h3>Portable Power Bank</h3>
+                        <p>High-capacity 20,000mAh power bank with fast charging for all your devices.</p>
+                        <span class="product-price">$25 / 30,000 SSP</span>
+                        <a href="tel:+211927930310" class="btn"><i class="fas fa-phone-alt"></i> Call to Order</a>
+                        <a href="https://wa.me/211927930310" class="btn btn-whatsapp" style="margin-top: 0.5rem;"><i class="fab fa-whatsapp"></i> WhatsApp Order</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- All Products Grid -->
-    <section class="section all-products">
+    <!-- Call to Action -->
+    <section class="page-section" style="background: var(--color-light-gray);">
         <div class="container">
-            <h2 class="section-title">Complete Product Range</h2>
-            <p class="section-subtitle">Browse our full catalog of Samsung appliances</p>
-
-            <div class="products-container grid-view">
-                <!-- Air Conditioners -->
-                <div class="product-card" data-category="ac">
-                    <div class="product-badge">Energy Saver</div>
-                    <div class="product-image">
-                        <img src="assets/samsu.jpg" alt="Samsung DVM S2">
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">Air Conditioner</span>
-                        <h3 class="product-name">Samsung DVM S2 Multi V</h3>
-                        <p class="product-description">Advanced multi-split air conditioning system for large commercial and residential buildings.</p>
-                        <div class="product-features">
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Inverter Technology</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Multi-zone Control</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Smart Diagnosis</span>
-                            </div>
-                        </div>
-                        <div class="product-specs">
-                            <div class="spec">
-                                <strong>Capacity:</strong> 5-20 HP
-                            </div>
-                            <div class="spec">
-                                <strong>Warranty:</strong> 5 Years
-                            </div>
-                        </div>
-                        <div class="product-actions">
-                            <a href="contact.html" class="btn btn-primary">Inquire Now</a>
-                            <button class="btn-icon" title="Add to favorites">
-                                <i class="far fa-heart"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card" data-category="ac" id="windfree-details">
-                    <div class="product-badge">Innovation</div>
-                    <div class="product-image">
-                        <img src="assets/sam.jpg" alt="Samsung WindFree">
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">Air Conditioner</span>
-                        <h3 class="product-name">Samsung WindFree™ AC</h3>
-                        <p class="product-description">Enjoy cool air without the direct wind chill. Perfect for bedrooms and living areas.</p>
-                        <div class="product-features">
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>WindFree™ Cooling</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Digital Inverter Boost</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Triple Protection Plus</span>
-                            </div>
-                        </div>
-                        <div class="product-specs">
-                            <div class="spec">
-                                <strong>Capacity:</strong> 1-2.5 HP
-                            </div>
-                            <div class="spec">
-                                <strong>Warranty:</strong> 10 Years
-                            </div>
-                        </div>
-                        <div class="product-actions">
-                            <a href="contact.html" class="btn btn-primary">Inquire Now</a>
-                            <button class="btn-icon" title="Add to favorites">
-                                <i class="far fa-heart"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Generators -->
-                <div class="product-card" data-category="generator" id="generator-details">
-                    <div class="product-badge">Popular</div>
-                    <div class="product-image">
-                        <img src="assets/sams.png" alt="Samsung Generator">
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">Generator</span>
-                        <h3 class="product-name">Samsung Power Generator</h3>
-                        <p class="product-description">Reliable power backup solution for homes and businesses with advanced safety features.</p>
-                        <div class="product-features">
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Automatic Voltage Regulation</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Low Noise Operation</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Fuel Efficient</span>
-                            </div>
-                        </div>
-                        <div class="product-specs">
-                            <div class="spec">
-                                <strong>Power:</strong> 5-50 kVA
-                            </div>
-                            <div class="spec">
-                                <strong>Warranty:</strong> 2 Years
-                            </div>
-                        </div>
-                        <div class="product-actions">
-                            <a href="contact.html" class="btn btn-primary">Inquire Now</a>
-                            <button class="btn-icon" title="Add to favorites">
-                                <i class="far fa-heart"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Water Heaters -->
-                <div class="product-card" data-category="heater" id="heater-details">
-                    <div class="product-badge">Efficient</div>
-                    <div class="product-image">
-                        <img src="assets/samm.jpg" alt="Samsung Water Heater">
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">Water Heater</span>
-                        <h3 class="product-name">Samsung Water Heater</h3>
-                        <p class="product-description">Advanced water heating technology for your comfort with energy-saving features.</p>
-                        <div class="product-features">
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Fast Heating</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Energy Saving Mode</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Safety Features</span>
-                            </div>
-                        </div>
-                        <div class="product-specs">
-                            <div class="spec">
-                                <strong>Capacity:</strong> 10-100 Liters
-                            </div>
-                            <div class="spec">
-                                <strong>Warranty:</strong> 5 Years
-                            </div>
-                        </div>
-                        <div class="product-actions">
-                            <a href="contact.html" class="btn btn-primary">Inquire Now</a>
-                            <button class="btn-icon" title="Add to favorites">
-                                <i class="far fa-heart"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Lighting -->
-                <div class="product-card" data-category="lighting">
-                    <div class="product-badge">Smart</div>
-                    <div class="product-image">
-                        <img src="assets/samsam.jpg" alt="Samsung Lighting">
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">Lighting</span>
-                        <h3 class="product-name">Samsung Smart Lighting</h3>
-                        <p class="product-description">Intelligent lighting solutions for modern homes and offices with smart control.</p>
-                        <div class="product-features">
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Smart Control</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Energy Efficient</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Color Options</span>
-                            </div>
-                        </div>
-                        <div class="product-specs">
-                            <div class="spec">
-                                <strong>Type:</strong> LED Smart Bulbs
-                            </div>
-                            <div class="spec">
-                                <strong>Warranty:</strong> 3 Years
-                            </div>
-                        </div>
-                        <div class="product-actions">
-                            <a href="contact.html" class="btn btn-primary">Inquire Now</a>
-                            <button class="btn-icon" title="Add to favorites">
-                                <i class="far fa-heart"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Thermostats -->
-                <div class="product-card" data-category="thermostat">
-                    <div class="product-badge">Precision</div>
-                    <div class="product-image">
-                        <img src="assets/sama.jpg" alt="Samsung Thermostat">
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">Thermostat</span>
-                        <h3 class="product-name">Samsung Smart Thermostat</h3>
-                        <p class="product-description">Precision temperature control for your HVAC system with smart scheduling.</p>
-                        <div class="product-features">
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Smart Scheduling</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Energy Reports</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Remote Access</span>
-                            </div>
-                        </div>
-                        <div class="product-specs">
-                            <div class="spec">
-                                <strong>Compatibility:</strong> Most HVAC Systems
-                            </div>
-                            <div class="spec">
-                                <strong>Warranty:</strong> 2 Years
-                            </div>
-                        </div>
-                        <div class="product-actions">
-                            <a href="contact.html" class="btn btn-primary">Inquire Now</a>
-                            <button class="btn-icon" title="Add to favorites">
-                                <i class="far fa-heart"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Additional Products for Better Layout -->
-                <div class="product-card" data-category="ac">
-                    <div class="product-badge">Premium</div>
-                    <div class="product-image">
-                        <img src="assets/sam.jpg" alt="Samsung AR9500">
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">Air Conditioner</span>
-                        <h3 class="product-name">Samsung AR9500</h3>
-                        <p class="product-description">Premium air conditioner with advanced filtration and smart home integration.</p>
-                        <div class="product-features">
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Air Purification</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Voice Control</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>WiFi Enabled</span>
-                            </div>
-                        </div>
-                        <div class="product-specs">
-                            <div class="spec">
-                                <strong>Capacity:</strong> 1.5-3 HP
-                            </div>
-                            <div class="spec">
-                                <strong>Warranty:</strong> 5 Years
-                            </div>
-                        </div>
-                        <div class="product-actions">
-                            <a href="contact.html" class="btn btn-primary">Inquire Now</a>
-                            <button class="btn-icon" title="Add to favorites">
-                                <i class="far fa-heart"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="product-card" data-category="generator">
-                    <div class="product-badge">Heavy Duty</div>
-                    <div class="product-image">
-                        <img src="assets/samaa.jpg" alt="Samsung Industrial Generator">
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">Generator</span>
-                        <h3 class="product-name">Samsung Industrial Generator</h3>
-                        <p class="product-description">Heavy-duty power solution for industrial applications and large facilities.</p>
-                        <div class="product-features">
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Industrial Grade</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Automatic Transfer</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                <span>Remote Monitoring</span>
-                            </div>
-                        </div>
-                        <div class="product-specs">
-                            <div class="spec">
-                                <strong>Power:</strong> 100-500 kVA
-                            </div>
-                            <div class="spec">
-                                <strong>Warranty:</strong> 3 Years
-                            </div>
-                        </div>
-                        <div class="product-actions">
-                            <a href="contact.html" class="btn btn-primary">Inquire Now</a>
-                            <button class="btn-icon" title="Add to favorites">
-                                <i class="far fa-heart"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+            <div class="section-title">
+                <h2>Can't Find What You're Looking For?</h2>
+                <p>We regularly update our inventory with new products. Contact us for special requests or inquiries about specific electronics.</p>
             </div>
-
-            <div class="load-more">
-                <button class="btn btn-secondary" id="load-more-btn">Load More Products</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Technical Support Section -->
-    <section class="section technical-support">
-        <div class="container">
-            <div class="support-content">
-                <div class="support-info">
-                    <h2>Need Technical Advice?</h2>
-                    <p>Our Samsung-certified experts are ready to help you choose the perfect products for your specific needs and South Sudan's climate conditions.</p>
-                    <div class="support-features">
-                        <div class="support-feature">
-                            <i class="fas fa-user-tie"></i>
-                            <div>
-                                <h4>Expert Consultation</h4>
-                                <p>Get personalized recommendations from our certified technicians</p>
-                            </div>
-                        </div>
-                        <div class="support-feature">
-                            <i class="fas fa-ruler-combined"></i>
-                            <div>
-                                <h4>Site Assessment</h4>
-                                <p>We can visit your location to provide accurate product recommendations</p>
-                            </div>
-                        </div>
-                        <div class="support-feature">
-                            <i class="fas fa-calculator"></i>
-                            <div>
-                                <h4>Energy Analysis</h4>
-                                <p>Get detailed energy consumption and cost analysis for your needs</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="support-cta">
-                    <h3>Get Professional Advice</h3>
-                    <p>Contact our product specialists today</p>
-                    <div class="support-contacts">
-                        <a href="tel:+211927490141" class="contact-method">
-                            <i class="fas fa-phone"></i>
-                            <span>+211 927 490 141</span>
-                        </a>
-                        <a href="tel:0910545500" class="contact-method">
-                            <i class="fas fa-phone"></i>
-                            <span>0910 545 500</span>
-                        </a>
-                        <a href="contact.html" class="btn btn-primary">Request Consultation</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Warranty Section -->
-    <section class="section warranty-info">
-        <div class="container">
-            <h2 class="section-title">Samsung Warranty & Support</h2>
-            <div class="warranty-grid">
-                <div class="warranty-card">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Manufacturer Warranty</h3>
-                    <p>All our products come with official Samsung warranty coverage for peace of mind.</p>
-                </div>
-                <div class="warranty-card">
-                    <i class="fas fa-tools"></i>
-                    <h3>Extended Support</h3>
-                    <p>We offer extended service plans to protect your investment beyond the standard warranty.</p>
-                </div>
-                <div class="warranty-card">
-                    <i class="fas fa-headset"></i>
-                    <h3>Technical Support</h3>
-                    <p>24/7 technical support for all Samsung products purchased from Blue Star Engineering.</p>
-                </div>
+            <div style="text-align: center;">
+                <a href="contact.html" class="btn" style="margin-right: 1rem;">Contact Us</a>
+                <a href="tel:+211927930310" class="btn"><i class="fas fa-phone-alt"></i> Call Now</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <div class="footer-grid">
+            <div class="footer-content">
                 <div class="footer-column">
-                    <h4>Blue Star Engineering</h4>
-                    <p>South Sudan's premier Samsung appliance provider since 2010. Quality products, professional services, and unmatched customer support.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                    <img src="assets/afrilogo.jpg" alt="AFRI TECH Logo" class="footer-logo">
+                    <h3>AFRI TECH</h3>
+                    <p>Your trusted partner for quality electronics and electrical services in Juba, South Sudan.</p>
                 </div>
                 <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="products.html"><i class="fas fa-shopping-bag"></i> Products</a></li>
+                        <li><a href="services.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h4>Products</h4>
-                    <ul>
-                        <li><a href="products.html">Air Conditioners</a></li>
-                        <li><a href="products.html">Water Heaters</a></li>
-                        <li><a href="products.html">Generators</a></li>
-                        <li><a href="products.html">Thermostats</a></li>
-                        <li><a href="products.html">Lighting Solutions</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Contact Info</h4>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Juba, South Sudan</li>
-                        <li><i class="fas fa-phone"></i> +211 927 490 141</li>
-                        <li><i class="fas fa-phone"></i> 0910 545 500</li>
-                        <li><i class="fas fa-envelope"></i> info@bluestar-eng.com</li>
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:+211927930310"><i class="fas fa-phone-alt"></i> +211 927 930 310</a></li>
+                        <li><a href="https://wa.me/211927930310"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                        <li><a href="mailto:info@afritech.com"><i class="fas fa-envelope"></i> info@afritech.com</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Juba, South Sudan</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 Blue Star Engineering Co. Ltd. All Rights Reserved. | Official Samsung Partner in South Sudan</p>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AFRI TECH. All rights reserved. | Proudly serving Juba, South Sudan</p>
             </div>
         </div>
     </footer>
