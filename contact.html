@@ -59,7 +59,7 @@
                             </div>
                             <div>
                                 <h3>Our Location</h3>
-                                <p>Juba, South Sudan<br>Konyo Konyo Market Area</p>
+                                <p>Juba, South Sudan<br>Gudele 2 Market Area</p>
                             </div>
                         </div>
                         
@@ -69,7 +69,7 @@
                             </div>
                             <div>
                                 <h3>Phone Number</h3>
-                                <p>+211 955 123 456<br>+211 977 987 654</p>
+                                <p>+211 926 433 192<br>+211 981 211 736</p>
                             </div>
                         </div>
                         
@@ -79,7 +79,7 @@
                             </div>
                             <div>
                                 <h3>Email Address</h3>
-                                <p>info@crestlineweb.com<br>support@crestlineweb.com</p>
+                                <p>riekgatluak25@gmail.com<br>geah2727@gmail.com</p>
                             </div>
                         </div>
                         
@@ -110,44 +110,86 @@
                         <p>Fill out the form below and we'll get back to you within 24 hours.</p>
                         
                         <form id="contactForm">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="name">Full Name *</label>
-                                    <input type="text" id="name" class="form-control" required>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="email">Email Address *</label>
-                                    <input type="email" id="email" class="form-control" required>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" class="form-control">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="service">Service Interested In</label>
-                                <select id="service" class="form-control">
-                                    <option value="">Select a service</option>
-                                    <option value="web-design">Custom Web Design</option>
-                                    <option value="ecommerce">E-Commerce Solutions</option>
-                                    <option value="responsive">Responsive Development</option>
-                                    <option value="company">Company Websites</option>
-                                    <option value="maintenance">Website Maintenance</option>
-                                    <option value="seo">SEO Optimization</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message">Your Message *</label>
-                                <textarea id="message" class="form-control" rows="5" required></textarea>
-                            </div>
-                            
-                            <button type="submit" class="btn" style="width: 100%;">Send Message</button>
-                        </form>
+    <div class="form-row">
+        <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" class="form-control" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="service">Service Interested In</label>
+        <select id="service" class="form-control">
+            <option value="">Select a service</option>
+            <option value="web-design">Custom Web Design</option>
+            <option value="ecommerce">E-Commerce Solutions</option>
+            <option value="responsive">Responsive Development</option>
+            <option value="company">Company Websites</option>
+            <option value="maintenance">Website Maintenance</option>
+            <option value="seo">SEO Optimization</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="message">Your Message *</label>
+        <textarea id="message" class="form-control" rows="5" required></textarea>
+    </div>
+
+    <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+    <p id="formMessage" style="margin-top: 15px; text-align: center;"></p>
+</form>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const formMessage = document.getElementById('formMessage');
+    formMessage.textContent = 'Sending...';
+
+    const data = {
+        apiKey: 'sf_j2i6h9ej2dki8j17bfme0i90', // <-- Replace with your StaticForms API Key
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        service: document.getElementById('service').value,
+        message: document.getElementById('message').value
+    };
+
+    fetch('https://api.staticforms.dev/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(result => {
+        if(result.success) {
+            formMessage.style.color = 'green';
+            formMessage.textContent = 'Thank you! Your message has been sent.';
+            document.getElementById('contactForm').reset();
+        } else {
+            formMessage.style.color = 'red';
+            formMessage.textContent = 'Oops! Something went wrong. Please try again.';
+        }
+    })
+    .catch(error => {
+        formMessage.style.color = 'red';
+        formMessage.textContent = 'Oops! Something went wrong. Please try again.';
+        console.error('Error:', error);
+    });
+});
+</script>
+
                     </div>
                 </div>
             </div>
@@ -166,8 +208,8 @@
                             <h3>Juba, South Sudan</h3>
                             <p>Our office is located in the heart of Juba's business district, accessible from all major areas of the city.</p>
                             <div class="location-details">
-                                <p><strong>Address:</strong> Konyo Konyo Market Area, Juba</p>
-                                <p><strong>Landmark:</strong> Near Juba Commercial Bank</p>
+                                <p><strong>Address:</strong> Gudele 2 Market Area, Juba</p>
+                                <p><strong>Landmark:</strong> Near Lufuo mall</p>
                             </div>
                         </div>
                     </div>
