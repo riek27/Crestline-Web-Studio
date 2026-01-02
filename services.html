@@ -3,313 +3,305 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | Crestline Web & Design</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Our Services | Crestline Web Studio</title>
+    <meta name="description" content="Comprehensive web services for construction businesses including design, development, SEO, and website redesign.">
+    <meta name="keywords" content="construction website services, builder website design, contractor SEO, construction website redesign">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
     <!-- Header & Navigation -->
-    <header>
+    <header class="main-header">
         <div class="container">
-            <a href="index.html" class="logo">
-                <i class="fas fa-code"></i>
-                Crestline<span>Web</span>
-            </a>
-            
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <nav id="mainNav">
-                <ul>
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="services.html" class="nav-link active">Services</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-main">Crestline</span>
+                    <span class="logo-sub">Web Studio</span>
+                </a>
+                
+                <button class="mobile-menu-btn" aria-label="Open menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li class="has-dropdown">
+                            <a href="services.html" class="nav-link active">Services <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="services.html#design">Website Design</a></li>
+                                <li><a href="services.html#development">Website Development</a></li>
+                                <li><a href="services.html#seo">SEO & Local Ranking</a></li>
+                                <li><a href="services.html#redesign">Website Redesign</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                        <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                        <li><a href="contact.html" class="nav-link btn-nav">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <!-- Services Page Content -->
-    <main>
-        <section class="services-hero">
-            <div class="services-bg parallax"></div>
-            <div class="services-overlay"></div>
-            
-            <div class="container">
-                <div class="hero-content">
-                    <h1>Our Services</h1>
-                    <p>We offer a comprehensive range of web development services designed to meet the unique needs of businesses in South Sudan's growing digital economy.</p>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="index.html" class="logo">
+                <span class="logo-main">Crestline</span>
+                <span class="logo-sub">Web Studio</span>
+            </a>
+            <button class="mobile-menu-close" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About</a></li>
+            <li class="mobile-has-dropdown">
+                <a href="services.html" class="mobile-nav-link active mobile-dropdown-toggle">
+                    Services <i class="fas fa-chevron-down"></i>
+                </a>
+                <ul class="mobile-dropdown">
+                    <li><a href="services.html#design" class="mobile-nav-link">Website Design</a></li>
+                    <li><a href="services.html#development" class="mobile-nav-link">Website Development</a></li>
+                    <li><a href="services.html#seo" class="mobile-nav-link">SEO & Local Ranking</a></li>
+                    <li><a href="services.html#redesign" class="mobile-nav-link">Website Redesign</a></li>
+                </ul>
+            </li>
+            <li><a href="pricing.html" class="mobile-nav-link">Pricing</a></li>
+            <li><a href="testimonials.html" class="mobile-nav-link">Testimonials</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Services Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-hero-title">Our Services</h1>
+                <p class="page-hero-subtitle">Comprehensive web solutions tailored specifically for construction businesses</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Design Service -->
+    <section class="section service-detail" id="design">
+        <div class="container">
+            <div class="service-header">
+                <div class="service-icon-large">
+                    <i class="fas fa-pencil-ruler"></i>
+                </div>
+                <h2 class="service-title">Website Design</h2>
+            </div>
+            <div class="service-content">
+                <div class="service-text">
+                    <p class="service-intro">First impressions matter. Our custom website designs for construction companies are visually striking, user-friendly, and built to convert visitors into clients.</p>
+                    
+                    <div class="service-features">
+                        <h3 class="features-title">What's Included:</h3>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Custom designs that reflect your brand identity</li>
+                            <li><i class="fas fa-check"></i> Mobile-responsive layouts that work on all devices</li>
+                            <li><i class="fas fa-check"></i> User experience optimized for construction clients</li>
+                            <li><i class="fas fa-check"></i> Visual storytelling through galleries and project showcases</li>
+                            <li><i class="fas fa-check"></i> Clear call-to-action placement for maximum conversions</li>
+                            <li><i class="fas fa-check"></i> Industry-specific design elements and imagery</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-cta">
+                        <a href="contact.html" class="btn btn-primary">
+                            <i class="fas fa-calendar-check"></i> Start Your Design Project
+                        </a>
+                    </div>
+                </div>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80" alt="Website design for construction">
                 </div>
             </div>
-        </section>
-        
-        <section class="services-intro">
-            <div class="container">
-                <div class="intro-content fade-in">
-                    <h2>Comprehensive Web Solutions</h2>
-                    <p>At Crestline Web & Design, we provide end-to-end web development services that transform your business ideas into powerful digital experiences. From initial concept to final deployment and beyond, we're with you every step of the way.</p>
-                    <p>Our approach combines technical expertise with creative vision to deliver websites that not only look stunning but also perform exceptionally, driving real results for your business.</p>
+        </div>
+    </section>
+
+    <!-- Website Development Service -->
+    <section class="section service-detail bg-light" id="development">
+        <div class="container">
+            <div class="service-header">
+                <div class="service-icon-large">
+                    <i class="fas fa-code"></i>
                 </div>
+                <h2 class="service-title">Website Development</h2>
             </div>
-        </section>
-        
-        <section class="services-main">
-            <div class="container">
-                <div class="services-grid">
-                    <div class="service-card detailed fade-in">
-                        <div class="service-icon">
-                            <i class="fas fa-paint-brush"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3>Custom Web Design</h3>
-                            <p>We create unique, visually stunning websites tailored to your brand identity and business goals. Our designs are not just beautiful but also strategically crafted to convert visitors into customers.</p>
-                            <ul class="service-features">
-                                <li><i class="fas fa-check"></i> Brand-focused design</li>
-                                <li><i class="fas fa-check"></i> User experience optimization</li>
-                                <li><i class="fas fa-check"></i> Custom illustrations & graphics</li>
-                                <li><i class="fas fa-check"></i> Strategic layout planning</li>
-                            </ul>
-                            <a href="contact.html" class="btn">Start Project</a>
-                        </div>
+            <div class="service-content reverse">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Website development">
+                </div>
+                <div class="service-text">
+                    <p class="service-intro">We build fast, secure, and scalable websites using the latest technologies. Every site is optimized for performance and search engines right from the start.</p>
+                    
+                    <div class="service-features">
+                        <h3 class="features-title">What's Included:</h3>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Fast-loading websites (critical for mobile users)</li>
+                            <li><i class="fas fa-check"></i> SEO-friendly structure and code</li>
+                            <li><i class="fas fa-check"></i> Secure hosting and regular maintenance</li>
+                            <li><i class="fas fa-check"></i> Easy-to-use content management system</li>
+                            <li><i class="fas fa-check"></i> Integration with your existing tools and systems</li>
+                            <li><i class="fas fa-check"></i> Cross-browser compatibility testing</li>
+                        </ul>
                     </div>
                     
-                    <div class="service-card detailed fade-in">
-                        <div class="service-icon">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3>E-Commerce Solutions</h3>
-                            <p>Build a powerful online store with our e-commerce solutions. We create secure, user-friendly shopping experiences that drive sales and grow your business online.</p>
-                            <ul class="service-features">
-                                <li><i class="fas fa-check"></i> Secure payment integration</li>
-                                <li><i class="fas fa-check"></i> Inventory management</li>
-                                <li><i class="fas fa-check"></i> Mobile-optimized checkout</li>
-                                <li><i class="fas fa-check"></i> Analytics & reporting</li>
-                            </ul>
-                            <a href="contact.html" class="btn">Start Project</a>
-                        </div>
-                    </div>
-                    
-                    <div class="service-card detailed fade-in">
-                        <div class="service-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3>Responsive Development</h3>
-                            <p>Ensure your website looks and functions perfectly on all devices. Our responsive designs adapt seamlessly to desktops, tablets, and smartphones.</p>
-                            <ul class="service-features">
-                                <li><i class="fas fa-check"></i> Mobile-first approach</li>
-                                <li><i class="fas fa-check"></i> Cross-browser compatibility</li>
-                                <li><i class="fas fa-check"></i> Touch-friendly interfaces</li>
-                                <li><i class="fas fa-check"></i> Performance optimization</li>
-                            </ul>
-                            <a href="contact.html" class="btn">Start Project</a>
-                        </div>
-                    </div>
-                    
-                    <div class="service-card detailed fade-in">
-                        <div class="service-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3>Company Websites</h3>
-                            <p>Establish a professional online presence with a company website that showcases your products, services, and brand story. We build sites that instill trust and credibility.</p>
-                            <ul class="service-features">
-                                <li><i class="fas fa-check"></i> Corporate branding</li>
-                                <li><i class="fas fa-check"></i> Service/Product showcases</li>
-                                <li><i class="fas fa-check"></i> Team & company profiles</li>
-                                <li><i class="fas fa-check"></i> Contact & inquiry forms</li>
-                            </ul>
-                            <a href="contact.html" class="btn">Start Project</a>
-                        </div>
-                    </div>
-                    
-                    <div class="service-card detailed fade-in">
-                        <div class="service-icon">
-                            <i class="fas fa-tools"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3>Website Maintenance</h3>
-                            <p>Keep your website running smoothly with our maintenance services. We handle updates, security, backups, and performance optimization.</p>
-                            <ul class="service-features">
-                                <li><i class="fas fa-check"></i> Regular updates & backups</li>
-                                <li><i class="fas fa-check"></i> Security monitoring</li>
-                                <li><i class="fas fa-check"></i> Performance optimization</li>
-                                <li><i class="fas fa-check"></i> Content updates</li>
-                            </ul>
-                            <a href="contact.html" class="btn">Start Project</a>
-                        </div>
-                    </div>
-                    
-                    <div class="service-card detailed fade-in">
-                        <div class="service-icon">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3>SEO Optimization</h3>
-                            <p>Improve your website's visibility on search engines with our SEO services. We optimize your site to rank higher and attract more organic traffic.</p>
-                            <ul class="service-features">
-                                <li><i class="fas fa-check"></i> Keyword research</li>
-                                <li><i class="fas fa-check"></i> On-page optimization</li>
-                                <li><i class="fas fa-check"></i> Technical SEO audit</li>
-                                <li><i class="fas fa-check"></i> Performance tracking</li>
-                            </ul>
-                            <a href="contact.html" class="btn">Start Project</a>
-                        </div>
+                    <div class="service-cta">
+                        <a href="contact.html" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i> Develop Your Website
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <section class="process">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Our Process</h2>
+        </div>
+    </section>
+
+    <!-- SEO & Local Ranking Service -->
+    <section class="section service-detail" id="seo">
+        <div class="container">
+            <div class="service-header">
+                <div class="service-icon-large">
+                    <i class="fas fa-chart-line"></i>
                 </div>
-                
-                <div class="process-steps">
-                    <div class="step fade-in">
-                        <div class="step-number">01</div>
-                        <div class="step-content">
-                            <h3>Discovery & Planning</h3>
-                            <p>We begin by understanding your business, goals, and target audience to create a strategic plan.</p>
-                        </div>
+                <h2 class="service-title">SEO & Local Ranking</h2>
+            </div>
+            <div class="service-content">
+                <div class="service-text">
+                    <p class="service-intro">Get found by clients searching for construction services in your area. Our local SEO strategies are specifically designed for construction businesses.</p>
+                    
+                    <div class="service-features">
+                        <h3 class="features-title">What's Included:</h3>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Optimization for local search terms (e.g., "roofing contractor near me")</li>
+                            <li><i class="fas fa-check"></i> Google Business Profile setup and optimization</li>
+                            <li><i class="fas fa-check"></i> Local directory listings and citation building</li>
+                            <li><i class="fas fa-check"></i> Content strategy targeting local clients</li>
+                            <li><i class="fas fa-check"></i> Regular performance reporting and adjustments</li>
+                            <li><i class="fas fa-check"></i> Review management and reputation building</li>
+                        </ul>
                     </div>
                     
-                    <div class="step fade-in">
-                        <div class="step-number">02</div>
-                        <div class="step-content">
-                            <h3>Design & Prototyping</h3>
-                            <p>Our designers create wireframes and mockups that bring your vision to life before development begins.</p>
-                        </div>
+                    <div class="service-cta">
+                        <a href="contact.html" class="btn btn-primary">
+                            <i class="fas fa-search"></i> Improve Your Local SEO
+                        </a>
+                    </div>
+                </div>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="SEO analysis">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Redesign Service -->
+    <section class="section service-detail bg-light" id="redesign">
+        <div class="container">
+            <div class="service-header">
+                <div class="service-icon-large">
+                    <i class="fas fa-paint-roller"></i>
+                </div>
+                <h2 class="service-title">Website Redesign</h2>
+            </div>
+            <div class="service-content reverse">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Website redesign">
+                </div>
+                <div class="service-text">
+                    <p class="service-intro">Is your current website outdated or not generating leads? We'll transform your existing site into a modern, high-converting marketing tool.</p>
+                    
+                    <div class="service-features">
+                        <h3 class="features-title">What's Included:</h3>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Modernize outdated designs and functionality</li>
+                            <li><i class="fas fa-check"></i> Improve mobile responsiveness and user experience</li>
+                            <li><i class="fas fa-check"></i> Update content to better reflect your services</li>
+                            <li><i class="fas fa-check"></i> Implement conversion rate optimization strategies</li>
+                            <li><i class="fas fa-check"></i> Preserve existing SEO value while improving performance</li>
+                            <li><i class="fas fa-check"></i> Integrate new features and functionality</li>
+                        </ul>
                     </div>
                     
-                    <div class="step fade-in">
-                        <div class="step-number">03</div>
-                        <div class="step-content">
-                            <h3>Development</h3>
-                            <p>Our developers build your website using the latest technologies and best practices for performance.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="step fade-in">
-                        <div class="step-number">04</div>
-                        <div class="step-content">
-                            <h3>Testing & Launch</h3>
-                            <p>We thoroughly test your website across devices and browsers before launching it to the world.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="step fade-in">
-                        <div class="step-number">05</div>
-                        <div class="step-content">
-                            <h3>Support & Maintenance</h3>
-                            <p>We provide ongoing support to ensure your website continues to perform at its best.</p>
-                        </div>
+                    <div class="service-cta">
+                        <a href="contact.html" class="btn btn-primary">
+                            <i class="fas fa-sync-alt"></i> Redesign Your Website
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <section class="pricing-cta">
-            <div class="container">
-                <div class="pricing-content fade-in">
-                    <h2>Ready to Get Started?</h2>
-                    <p>Contact us today for a free consultation and custom quote tailored to your specific needs and budget.</p>
-                    <div class="cta-buttons">
-                        <a href="contact.html" class="btn">Request a Quote</a>
-                        <a href="contact.html" class="btn secondary">Schedule a Call</a>
-                    </div>
-                </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section bg-dark">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Need a Custom Solution?</h2>
+                <p class="cta-description">Every construction business is unique. Contact us for a custom proposal tailored to your specific needs and goals.</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Get Your Custom Proposal</a>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="main-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <a href="index.html" class="footer-logo">Crestline<span>Web</span></a>
-                    <p>Premium web development agency based in Juba, South Sudan. We create exceptional digital experiences for businesses across all industries.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-main">Crestline</span>
+                        <span class="logo-sub">Web Studio</span>
+                    </a>
+                    <p class="footer-description">Specializing in premium website design and development for construction businesses across the United States.</p>
                 </div>
-                
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
+                <div class="footer-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                
-                <div class="footer-contact">
-                    <h3>Contact Info</h3>
-                    <ul>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <strong>Address:</strong>
-                                <p>Juba, South Sudan</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone-alt"></i>
-                            <div>
-                                <strong>Phone:</strong>
-                                <p>+211 926 433 192</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <strong>Email:</strong>
-                                <p>riekgatluak25@gmail..com</p>
-                            </div>
-                        </li>
+                <div class="footer-col">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#design">Website Design</a></li>
+                        <li><a href="services.html#development">Website Development</a></li>
+                        <li><a href="services.html#seo">SEO & Local Ranking</a></li>
+                        <li><a href="services.html#redesign">Website Redesign</a></li>
                     </ul>
                 </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@crestlinewebstudio.com</p>
+                        <p><i class="fas fa-globe"></i> Serving construction businesses across the U.S.</p>
+                    </div>
+                </div>
             </div>
-            
             <div class="footer-bottom">
-                <p>&copy; 2025 Crestline Web & Design. All rights reserved.</p>
+                <p class="copyright">&copy; <span id="current-year"></span> Crestline Web Studio — All Rights Reserved</p>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <div class="whatsapp-float" id="whatsappFloat">
-        <i class="fab fa-whatsapp"></i>
-    </div>
-    
-    <div class="whatsapp-popup" id="whatsappPopup">
-        <div class="popup-header">
-            <i class="fab fa-whatsapp"></i>
-            <h4>Crestline Support</h4>
-        </div>
-        <div class="popup-message">
-            <p><strong>Reply in 1 hour</strong></p>
-            <p>Our team typically responds within 1 hour during business hours.</p>
-        </div>
-        <div class="popup-actions">
-            <a href="https://wa.me/211981211736?text=Hello%20Crestline%20Web%20%26%20Design%2C%20I%20would%20like%20to%20discuss%20a%20project" target="_blank" class="popup-btn chat">Start Chat</a>
-            <div class="popup-btn later" id="closePopup">Maybe Later</div>
-        </div>
-    </div>
-
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
