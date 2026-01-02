@@ -380,20 +380,8 @@ function initInteractiveElements() {
         });
     });
     
-    // Interactive testimonials
-    const testimonials = document.querySelectorAll('.testimonial-card');
-    testimonials.forEach(testimonial => {
-        testimonial.addEventListener('click', () => {
-            const content = testimonial.querySelector('p');
-            content.classList.toggle('expanded');
-            
-            if (content.classList.contains('expanded')) {
-                content.style.maxHeight = content.scrollHeight + 'px';
-            } else {
-                content.style.maxHeight = '4.8em';
-            }
-        });
-    });
+    // REMOVED: Read more/read less functionality for testimonials
+    // Testimonials will now display fully without expansion
 }
 
 // ============================================
