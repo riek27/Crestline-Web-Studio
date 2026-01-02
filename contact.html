@@ -3,350 +3,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Crestline Web & Design</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Contact Us | Crestline Web Studio</title>
+    <meta name="description" content="Contact Crestline Web Studio for premium website design and development for your construction business. Get your free consultation today.">
+    <meta name="keywords" content="contact construction web design, builder website consultation, contractor website quote">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
     <!-- Header & Navigation -->
-    <header>
+    <header class="main-header">
         <div class="container">
-            <a href="index.html" class="logo">
-                <i class="fas fa-code"></i>
-                Crestline<span>Web</span>
-            </a>
-            
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <nav id="mainNav">
-                <ul>
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-main">Crestline</span>
+                    <span class="logo-sub">Web Studio</span>
+                </a>
+                
+                <button class="mobile-menu-btn" aria-label="Open menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li class="has-dropdown">
+                            <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="services.html#design">Website Design</a></li>
+                                <li><a href="services.html#development">Website Development</a></li>
+                                <li><a href="services.html#seo">SEO & Local Ranking</a></li>
+                                <li><a href="services.html#redesign">Website Redesign</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                        <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                        <li><a href="contact.html" class="nav-link active btn-nav">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <!-- Contact Page Content -->
-    <main>
-        <section class="contact-hero">
-            <div class="contact-bg parallax"></div>
-            <div class="contact-overlay"></div>
-            
-            <div class="container">
-                <div class="hero-content">
-                    <h1>Get In Touch</h1>
-                    <p>Ready to elevate your digital presence? Contact us today to discuss your project and discover how Crestline Web & Design can help your business succeed online.</p>
-                </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="index.html" class="logo">
+                <span class="logo-main">Crestline</span>
+                <span class="logo-sub">Web Studio</span>
+            </a>
+            <button class="mobile-menu-close" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About</a></li>
+            <li class="mobile-has-dropdown">
+                <a href="services.html" class="mobile-nav-link mobile-dropdown-toggle">
+                    Services <i class="fas fa-chevron-down"></i>
+                </a>
+                <ul class="mobile-dropdown">
+                    <li><a href="services.html#design" class="mobile-nav-link">Website Design</a></li>
+                    <li><a href="services.html#development" class="mobile-nav-link">Website Development</a></li>
+                    <li><a href="services.html#seo" class="mobile-nav-link">SEO & Local Ranking</a></li>
+                    <li><a href="services.html#redesign" class="mobile-nav-link">Website Redesign</a></li>
+                </ul>
+            </li>
+            <li><a href="pricing.html" class="mobile-nav-link">Pricing</a></li>
+            <li><a href="testimonials.html" class="mobile-nav-link">Testimonials</a></li>
+            <li><a href="contact.html" class="mobile-nav-link active">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Contact Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-hero-title">Contact Us</h1>
+                <p class="page-hero-subtitle">Ready to build your online presence? Get in touch for a free consultation</p>
             </div>
-        </section>
-        
-        <section class="contact-main">
-            <div class="container">
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-item fade-in">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h3>Our Location</h3>
-                                <p>Juba, South Sudan<br>Gudele 2 Market Area</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item fade-in">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div>
-                                <h3>Phone Number</h3>
-                                <p>+211 926 433 192<br>+211 981 211 736</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item fade-in">
-                            <div class="contact-icon">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="contact-title">Let's Build Something Great Together</h2>
+                    <p class="contact-description">We specialize in creating premium websites for construction businesses across the United States. Whether you're a custom home builder, roofing contractor, or remodeling company, we can help you establish a powerful online presence.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div class="detail-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>
-                            <div>
-                                <h3>Email Address</h3>
-                                <p>riekgatluak25@gmail.com<br>geah2727@gmail.com</p>
+                            <div class="detail-content">
+                                <h3 class="detail-title">Email</h3>
+                                <p class="detail-text">info@crestlinewebstudio.com</p>
                             </div>
                         </div>
-                        
-                        <div class="contact-item fade-in">
-                            <div class="contact-icon">
+                        <div class="contact-detail">
+                            <div class="detail-icon">
                                 <i class="fas fa-clock"></i>
                             </div>
-                            <div>
-                                <h3>Working Hours</h3>
-                                <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 2:00 PM</p>
+                            <div class="detail-content">
+                                <h3 class="detail-title">Response Time</h3>
+                                <p class="detail-text">We typically respond within 24 hours during business days.</p>
                             </div>
                         </div>
-                        
-                        <div class="contact-social fade-in">
-                            <h3>Follow Us</h3>
-                            <div class="social-links">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <div class="contact-detail">
+                            <div class="detail-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h3 class="detail-title">Service Area</h3>
+                                <p class="detail-text">Serving construction businesses across the United States.</p>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="contact-form fade-in">
-                        <h2>Send Us a Message</h2>
-                        <p>Fill out the form below and we'll get back to you within 24 hours.</p>
-                        
-                        <form id="contactForm">
-    <div class="form-row">
-        <div class="form-group">
-            <label for="name">Full Name *</label>
-            <input type="text" id="name" class="form-control" required>
-        </div>
-
-        <div class="form-group">
-            <label for="email">Email Address *</label>
-            <input type="email" id="email" class="form-control" required>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" class="form-control">
-    </div>
-
-    <div class="form-group">
-        <label for="service">Service Interested In</label>
-        <select id="service" class="form-control">
-            <option value="">Select a service</option>
-            <option value="web-design">Custom Web Design</option>
-            <option value="ecommerce">E-Commerce Solutions</option>
-            <option value="responsive">Responsive Development</option>
-            <option value="company">Company Websites</option>
-            <option value="maintenance">Website Maintenance</option>
-            <option value="seo">SEO Optimization</option>
-            <option value="other">Other</option>
-        </select>
-    </div>
-
-    <div class="form-group">
-        <label for="message">Your Message *</label>
-        <textarea id="message" class="form-control" rows="5" required></textarea>
-    </div>
-
-    <button type="submit" class="btn" style="width: 100%;">Send Message</button>
-    <p id="formMessage" style="margin-top: 15px; text-align: center;"></p>
-</form>
-
-<script>
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const formMessage = document.getElementById('formMessage');
-    formMessage.textContent = 'Sending...';
-
-    const data = {
-        apiKey: 'sf_j2i6h9ej2dki8j17bfme0i90', // <-- Replace with your StaticForms API Key
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        phone: document.getElementById('phone').value,
-        service: document.getElementById('service').value,
-        message: document.getElementById('message').value
-    };
-
-    fetch('https://api.staticforms.dev/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-    })
-    .then(response => response.json())
-    .then(result => {
-        if(result.success) {
-            formMessage.style.color = 'green';
-            formMessage.textContent = 'Thank you! Your message has been sent.';
-            document.getElementById('contactForm').reset();
-        } else {
-            formMessage.style.color = 'red';
-            formMessage.textContent = 'Oops! Something went wrong. Please try again.';
-        }
-    })
-    .catch(error => {
-        formMessage.style.color = 'red';
-        formMessage.textContent = 'Oops! Something went wrong. Please try again.';
-        console.error('Error:', error);
-    });
-});
-</script>
-
+                    <div class="contact-expect">
+                        <h3 class="expect-title">What to Expect:</h3>
+                        <ul class="expect-list">
+                            <li><i class="fas fa-check"></i> Free initial consultation</li>
+                            <li><i class="fas fa-check"></i> Custom proposal tailored to your business</li>
+                            <li><i class="fas fa-check"></i> Transparent pricing with no hidden fees</li>
+                            <li><i class="fas fa-check"></i> Clear timeline and project plan</li>
+                            <li><i class="fas fa-check"></i> Ongoing support and maintenance</li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="map-section">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Find Us in Juba</h2>
                 </div>
                 
-                <div class="map-container fade-in">
-                    <div class="map-placeholder">
-                        <div class="map-overlay">
-                            <i class="fas fa-map-marked-alt"></i>
-                            <h3>Juba, South Sudan</h3>
-                            <p>Our office is located in the heart of Juba's business district, accessible from all major areas of the city.</p>
-                            <div class="location-details">
-                                <p><strong>Address:</strong> Gudele 2 Market Area, Juba</p>
-                                <p><strong>Landmark:</strong> Near Lufuo mall</p>
+                <div class="contact-form-container">
+                    <div class="contact-form-card">
+                        <h3 class="form-title">Send Us a Message</h3>
+                        <p class="form-subtitle">Fill out the form below and we'll get back to you as soon as possible.</p>
+                        
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
                             </div>
-                        </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="business" class="form-label">Business Name *</label>
+                                <input type="text" id="business" name="business" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="trade" class="form-label">Construction Trade *</label>
+                                <select id="trade" name="trade" class="form-input" required>
+                                    <option value="">Select your trade</option>
+                                    <option value="home-builder">Custom Home Builder</option>
+                                    <option value="roofing">Roofing Company</option>
+                                    <option value="contractor">General Contractor</option>
+                                    <option value="luxury">Luxury Construction Firm</option>
+                                    <option value="remodeling">Remodeling Company</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Project Details *</label>
+                                <textarea id="message" name="message" class="form-input textarea" rows="5" required placeholder="Tell us about your website needs, timeline, and any specific requirements..."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block">
+                                    <span class="btn-text">Send Message</span>
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <section class="faq-section">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Frequently Asked Questions</h2>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common questions about working with us</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">How long does the website development process take?</h3>
+                    <p class="faq-answer">Typically 2-3 weeks from initial consultation to launch, depending on the complexity of your project and how quickly you provide content.</p>
                 </div>
-                
-                <div class="faq-container">
-                    <div class="faq-item fade-in">
-                        <div class="faq-question">
-                            <h3>How long does it take to build a website?</h3>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>The timeline depends on the complexity of your project. A basic website typically takes 2-4 weeks, while more complex e-commerce sites may take 6-8 weeks. We'll provide a detailed timeline during our initial consultation.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item fade-in">
-                        <div class="faq-question">
-                            <h3>What is your pricing structure?</h3>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>We provide custom quotes based on your specific requirements. Factors that influence pricing include design complexity, functionality, number of pages, and any special features needed. Contact us for a free, no-obligation quote.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item fade-in">
-                        <div class="faq-question">
-                            <h3>Do you offer ongoing support after launch?</h3>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Yes, we offer various maintenance and support packages to ensure your website continues to perform optimally. This includes security updates, performance optimization, content updates, and technical support.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item fade-in">
-                        <div class="faq-question">
-                            <h3>Will my website be mobile-friendly?</h3>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Absolutely! All websites we create are fully responsive and optimized for all devices, including smartphones and tablets. We follow mobile-first design principles to ensure the best possible experience on all screen sizes.</p>
-                        </div>
-                    </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Do you offer ongoing support after the website is launched?</h3>
+                    <p class="faq-answer">Yes, all our monthly plans include ongoing support, maintenance, security updates, and performance monitoring.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Can you help with content creation for our website?</h3>
+                    <p class="faq-answer">Yes, we offer content creation services including copywriting, photography guidance, and content strategy specifically for construction businesses.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What information do I need to provide to get started?</h3>
+                    <p class="faq-answer">We'll need basic information about your business, your target audience, examples of websites you like, and any existing branding materials.</p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section bg-dark">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Get Started?</h2>
+                <p class="cta-description">Contact us today for a free consultation and proposal for your construction business website.</p>
+                <a href="#contact-form" class="btn btn-primary btn-large">Get Your Free Consultation</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="main-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <a href="index.html" class="footer-logo">Crestline<span>Web</span></a>
-                    <p>Premium web development agency based in Juba, South Sudan. We create exceptional digital experiences for businesses across all industries.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-main">Crestline</span>
+                        <span class="logo-sub">Web Studio</span>
+                    </a>
+                    <p class="footer-description">Specializing in premium website design and development for construction businesses across the United States.</p>
                 </div>
-                
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
+                <div class="footer-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                
-                <div class="footer-contact">
-                    <h3>Contact Info</h3>
-                    <ul>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <strong>Address:</strong>
-                                <p>Juba, South Sudan</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone-alt"></i>
-                            <div>
-                                <strong>Phone:</strong>
-                                <p>+211 926 433 192</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <strong>Email:</strong>
-                                <p>riekgatluak25@gmail.com</p>
-                            </div>
-                        </li>
+                <div class="footer-col">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#design">Website Design</a></li>
+                        <li><a href="services.html#development">Website Development</a></li>
+                        <li><a href="services.html#seo">SEO & Local Ranking</a></li>
+                        <li><a href="services.html#redesign">Website Redesign</a></li>
                     </ul>
                 </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@crestlinewebstudio.com</p>
+                        <p><i class="fas fa-globe"></i> Serving construction businesses across the U.S.</p>
+                    </div>
+                </div>
             </div>
-            
             <div class="footer-bottom">
-                <p>&copy; 2025 Crestline Web & Design. All rights reserved.</p>
+                <p class="copyright">&copy; <span id="current-year"></span> Crestline Web Studio — All Rights Reserved</p>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <div class="whatsapp-float" id="whatsappFloat">
-        <i class="fab fa-whatsapp"></i>
-    </div>
-    
-    <div class="whatsapp-popup" id="whatsappPopup">
-        <div class="popup-header">
-            <i class="fab fa-whatsapp"></i>
-            <h4>Crestline Support</h4>
-        </div>
-        <div class="popup-message">
-            <p><strong>Reply in 1 hour</strong></p>
-            <p>Our team typically responds within 1 hour during business hours.</p>
-        </div>
-        <div class="popup-actions">
-            <a href="https://wa.me/211981211736?text=Hello%20Crestline%20Web%20%26%20Design%2C%20I%20would%20like%20to%20discuss%20a%20project" target="_blank" class="popup-btn chat">Start Chat</a>
-            <div class="popup-btn later" id="closePopup">Maybe Later</div>
-        </div>
-    </div>
-
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
