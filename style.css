@@ -1596,3 +1596,43 @@ h6 { font-size: 1rem; }
   text-decoration: underline;
 }
 
+/* Social Media Styling */
+.social-media {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-media a {
+    display: inline-flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: var(--gold);
+    transform: translateY(-2px);
+}
+
+.social-media i {
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
+    color: var(--gold);
+    transition: var(--transition);
+}
+
+.social-media a:hover i {
+    transform: scale(1.1);
+}
+
+/* Instagram specific hover effect */
+.social-media a[href*="instagram"]:hover i {
+    color: #E1306C; /* Instagram brand color on hover */
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
