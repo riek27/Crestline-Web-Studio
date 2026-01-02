@@ -426,3 +426,21 @@ window.addEventListener('load', function() {
     // Force a reflow to trigger animations
     document.body.clientWidth;
 });
+
+
+// Smooth scroll for hero scroll indicator
+const scrollIndicator = document.querySelector('.hero-scroll-indicator');
+if (scrollIndicator) {
+    scrollIndicator.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 100,
+                behavior: 'smooth'
+            });
+        }
+    });
+}
